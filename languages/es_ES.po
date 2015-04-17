@@ -1,0 +1,320 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"POT-Creation-Date: 2015-04-13 23:21+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
+"Language-Team: Ioan Virag | www.ioanvirag.com <ioan@ioanvirag.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:10
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: ../404.php:12
+msgid "Return home?"
+msgstr "¿Regresar al Inicio?"
+
+#: ../archive.php:34 ../index.php:28
+msgid "Previous page"
+msgstr ""
+
+#: ../archive.php:35 ../index.php:29
+msgid "Next page"
+msgstr ""
+
+#: ../archive.php:36 ../content.php:26 ../index.php:30
+#: ../loop-photography.php:32
+msgid "Page"
+msgstr ""
+
+#: ../author.php:9
+msgid "Author Archives for "
+msgstr "Archivos de autor de"
+
+#: ../author.php:15
+msgid "About "
+msgstr ""
+
+#: ../author.php:42 ../loop.php:22
+msgid "Published by"
+msgstr "Publicado por"
+
+#: ../author.php:43 ../loop.php:23
+msgid "Leave your thoughts"
+msgstr "Deja tus comentarios"
+
+#: ../author.php:43 ../loop.php:23
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+#: ../author.php:43 ../loop.php:23
+msgid "% Comments"
+msgstr "% Comentarios"
+
+#: ../author.php:62 ../loop.php:39
+msgid "Sorry, nothing to display."
+msgstr "Disculpa, nada para mostrar."
+
+#: ../comments.php:3
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr "Entrada protegida. Introduzca la contraseña para ver los comentarios."
+
+#: ../comments.php:18
+msgid "Comments are closed here."
+msgstr "Los comentarios están cerrados."
+
+#: ../content.php:17 ../loop-photography.php:23
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../content.php:22 ../loop-photography.php:28
+msgid "Pages:"
+msgstr ""
+
+#: ../functions.php:63
+msgid "Header Menu"
+msgstr "Menú de la cabecera"
+
+#: ../functions.php:72
+msgid "Right sidebar"
+msgstr ""
+
+#: ../functions.php:128
+msgid "Clear"
+msgstr ""
+
+#: ../functions.php:129
+msgid "Default"
+msgstr ""
+
+#: ../functions.php:130
+msgid "Select Color"
+msgstr ""
+
+#: ../libs/vhmThemeSettings.php:37
+msgid "Theme Settings"
+msgstr ""
+
+#: ../libs/vhmThemeSettings.php:164
+msgid "Update Settings"
+msgstr ""
+
+#: ../libs/vhmThemeSettings.php:169
+msgid "Theme by"
+msgstr ""
+
+#: ../libs/vhmThemeSettings.php:169
+msgid "Need support? Don't waste your precious time, HIRE ME!"
+msgstr ""
+
+#: ../libs/vhmThemeSettings.php:169
+msgid "Feeling generous? Buy me a beer, beer is good for motivation."
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:11
+msgid "Home"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:12
+msgid "The loop"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:13
+msgid "Posts"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:14
+msgid "Pages"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:27
+#: ../libs/vhmThemeSettings/backend.form.php:46
+#: ../libs/vhmThemeSettings/backend.form.php:63
+msgid "Post meta data"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:30
+#: ../libs/vhmThemeSettings/backend.form.php:49
+#: ../libs/vhmThemeSettings/backend.form.php:66
+msgid "Show author"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:31
+#: ../libs/vhmThemeSettings/backend.form.php:50
+#: ../libs/vhmThemeSettings/backend.form.php:67
+msgid "Show date"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:32
+#: ../libs/vhmThemeSettings/backend.form.php:51
+#: ../libs/vhmThemeSettings/backend.form.php:68
+msgid "Show comments"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/backend.form.php:33
+#: ../libs/vhmThemeSettings/backend.form.php:52
+msgid "Show categories"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:27
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:28
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:86
+msgid "Theme settings"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:64
+msgid "General"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:64
+msgid "Templates"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:81
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesBackend.php:102
+msgid "Thanks for choosing my theme."
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
+msgid "Comment"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
+msgid "1 comment"
+msgstr ""
+
+#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: ../search.php:7
+#, php-format
+msgid "%s Search Results for "
+msgstr "%s resultados resultados para"
+
+#: ../searchform.php:3
+msgid "To search, type and hit enter."
+msgstr "Para buscar, escribe y presiona Enter"
+
+#: ../searchform.php:4
+msgid "Search"
+msgstr "Buscar"
+
+#: ../single.php:33
+msgid "Next"
+msgstr ""
+
+#: ../single.php:34
+msgid "Next post:"
+msgstr ""
+
+#: ../single.php:36
+msgid "Previous"
+msgstr ""
+
+#: ../single.php:37
+msgid "Previous post:"
+msgstr ""
+
+#: ../tag.php:7
+msgid "Tag Archive: "
+msgstr "Archivo de etiquetas: "
+
+#~ msgid "Archives"
+#~ msgstr "Archivos"
+
+#~ msgid "Categories for"
+#~ msgstr "Categorías para"
+
+#~ msgid "Powered by"
+#~ msgstr "Desarrollado con"
+
+#~ msgid "<span class=\"fn\">%s</span> <span class=\"says\">says:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dice:</span>"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Su comentario espera moderación."
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s en %2$s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Editar)"
+
+#~ msgid "Sidebar Menu"
+#~ msgstr "Menú de la barra lateral"
+
+#~ msgid "Extra Menu"
+#~ msgstr "Menú extra"
+
+#~ msgid "Widget Area 1"
+#~ msgstr "Zona 1 de widgets"
+
+#~ msgid "Description for this widget-area..."
+#~ msgstr "Descripción para esta zona..."
+
+#~ msgid "Widget Area 2"
+#~ msgstr "Zona 2 de widgets"
+
+#~ msgid "View Article"
+#~ msgstr "Ver artículo"
+
+#~ msgid "HTML5 Blank Custom Post"
+#~ msgstr "Entradas personalizadas de HTML5 Blank"
+
+#~ msgid "Add New"
+#~ msgstr "Añadir nuevo"
+
+#~ msgid "Add New HTML5 Blank Custom Post"
+#~ msgstr "Añadir entrada personalizada de HTML5 Blank"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Edit HTML5 Blank Custom Post"
+#~ msgstr "Editar entrada personalizada de HTML5 Blank"
+
+#~ msgid "New HTML5 Blank Custom Post"
+#~ msgstr "Nueva entrada personalizada de HTML5 Blank"
+
+#~ msgid "View HTML5 Blank Custom Post"
+#~ msgstr "Ver entrada personalizada de HTML5 Blank"
+
+#~ msgid "Search HTML5 Blank Custom Post"
+#~ msgstr "Buscar entrada personalizada de HTML5 Blank"
+
+#~ msgid "No HTML5 Blank Custom Posts found"
+#~ msgstr "No se han encontrado entradas personalizadas de HTML5 Blank"
+
+#~ msgid "No HTML5 Blank Custom Posts found in Trash"
+#~ msgstr "No se han encontrado entradas personalizadas de HTML5 Blank en la papelera"
+
+#~ msgid "Latest Posts"
+#~ msgstr "Últimas entradas"
+
+#~ msgid "Tags: "
+#~ msgstr "Etiquetas: "
+
+#~ msgid "Categorised in: "
+#~ msgstr "Categorizado en: "
+
+#~ msgid "This post was written by "
+#~ msgstr "Esta entrada fue escrita por"
+
+#~ msgid "%s results for "
+#~ msgstr "%s Ergebnisse für "
