@@ -18,7 +18,7 @@ A WordPress blank/starter theme for start working on your own project. It works 
   Allows to add and change the basic fonts (site title, site description, paragraphs and headings) from *Appearance > Theme settings*
 
 ## Author
-* Viktor H. Morales ([viktormorales.com])(http://viktormorales.com)
+* Viktor H. Morales ([viktormorales.com](http://viktormorales.com))
 * Twitter: [@viktormorales](http://viktormorales.com)
 
 ## License
