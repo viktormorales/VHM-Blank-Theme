@@ -7,9 +7,9 @@
 			<!-- article -->
 			<article id="post-404">
 
-				<h1><?php _e( 'Page not found', TEXTDOMAIN ); ?></h1>
+				<h1><?php _e( 'Page not found', basename(__DIR__) ); ?></h1>
 				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', TEXTDOMAIN ); ?></a>
+					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', basename(__DIR__) ); ?></a>
 				</h2>
 
 			</article>

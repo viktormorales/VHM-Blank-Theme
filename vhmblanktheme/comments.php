@@ -15,7 +15,7 @@
 
 <?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-	<p><?php _e( 'Comments are closed here.', TEXTDOMAIN ); ?></p>
+	<p><?php _e( 'Comments are closed here.', basename(__DIR__) ); ?></p>
 
 <?php endif; ?>
 

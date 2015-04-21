@@ -1,11 +1,8 @@
 <?php
 
-/** Defines the textdomain */
-define('TEXTDOMAIN', 'vhmThemes');
-
-/** External resources */
+/** Load the class to implement the Bootstrap 3 navigation style */
 require(dirname(__FILE__) . '/libs/wp-bootstrap-navwalker.php');
-require(dirname(__FILE__) . '/libs/functions.class.php');
+/** Load the class for the theme settings */
 require(dirname(__FILE__) . '/libs/theme.settings.php');
 
 /** Theme Support */
@@ -43,7 +40,7 @@ if (function_exists('add_theme_support'))
 	add_theme_support( 'title-tag' );
 	
     // Localisation Support
-    load_theme_textdomain(TEXTDOMAIN, get_template_directory() . '/languages');
+    load_theme_textdomain(basename(__DIR__), get_template_directory() . '/languages');
 }
 
 /** Register menus */
@@ -51,7 +48,7 @@ if (function_exists('add_theme_support'))
  function register_menus() {
 	register_nav_menus(
 		array(
-			'header-menu' => __( 'Header Menu', TEXTDOMAIN )
+			'header-menu' => __( 'Header Menu', basename(__DIR__) )
 		)
 	);
  }
@@ -60,7 +57,7 @@ if (function_exists('add_theme_support'))
 if ( function_exists('register_sidebar') )
 {
 	register_sidebar( array( 
-		'name' => __('Right sidebar', TEXTDOMAIN)
+		'name' => __('Right sidebar', basename(__DIR__))
 	));
 }
 
@@ -75,6 +72,59 @@ add_filter( 'get_the_archive_title', function ($title) {
 	}
     return $title;
 });
+
+/** Template for listing the comments */
+function custom_comments( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case 'pingback' :
+		case 'trackback' :
+	?>
+	<li class="post pingback">
+		<p><?php _e( 'Pingback:'); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit'), '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+		break;
+		default :
+	?>
+	<li <?php comment_class('media'); ?> id="comment-<?php comment_ID(); ?>">
+		<a class="pull-left" href="#">
+			<?php
+				$avatar_size = 48;
+				if ( '0' != $comment->comment_parent )
+					$avatar_size = 48;
+				
+				echo get_avatar( $comment, $avatar_size );
+			?>
+		</a>
+		<div class="media-body">
+				<?php
+					/* translators: 1: comment author, 2: date and time */
+					printf( __( '%1$s <br /> %2$s', basename(__DIR__)),
+						sprintf( '<span class="fn">%s</span>', get_comment_author_link() ),
+						sprintf( '<a href="%1$s"><time pubdate datetime="%2$s"><small>%3$s</small></time></a>',
+							esc_url( get_comment_link( $comment->comment_ID ) ),
+							get_comment_time( 'c' ),
+							/* translators: 1: date, 2: time */
+							sprintf( __( '%1$s at %2$s', basename(__DIR__)), get_comment_date(), get_comment_time() )
+						)
+					);
+				?>
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.'); ?></em>
+					<br />
+				<?php endif; ?>
+
+				<div class="comment-content"><?php comment_text(); ?></div>
+
+				<div class="reply">
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', basename(__DIR__)), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</div><!-- .reply -->
+		</div>
+	
+		<?php
+		break;
+	endswitch;
+ }
 
 /** Load frontend scripts */
  add_action( 'wp_enqueue_scripts', 'frontend_scripts' );

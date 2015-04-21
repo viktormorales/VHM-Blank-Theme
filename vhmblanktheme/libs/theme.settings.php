@@ -28,7 +28,7 @@ class vhmThemeSettings
 	
 	public function settings_page_init() {
 		
-		$settings_page = add_theme_page( __('Theme settings', TEXTDOMAIN), __('Theme settings', TEXTDOMAIN), 'edit_theme_options', 'theme-settings', array(&$this, 'settings_page') );
+		$settings_page = add_theme_page( __('Theme settings', basename(__DIR__)), __('Theme settings', basename(__DIR__)), 'edit_theme_options', 'theme-settings', array(&$this, 'settings_page') );
 		add_action( "load-{$settings_page}", array(&$this, 'load_settings_page') ) ;
 	}
 
@@ -73,7 +73,7 @@ class vhmThemeSettings
 	}
 
 	public function admin_tabs() { 
-		$tabs = array( 'general' => __('General', TEXTDOMAIN) ); 
+		$tabs = array( 'general' => __('General', basename(__DIR__)) ); 
 		$links = array();
 		echo '<h2 class="nav-tab-wrapper">';
 		foreach( $tabs as $tab => $name ){
@@ -88,7 +88,7 @@ class vhmThemeSettings
 		?>
 		
 		<div class="wrap">
-			<h2><?php _e('Theme settings', TEXTDOMAIN); ?></h2>
+			<h2><?php _e('Theme settings', basename(__DIR__)); ?></h2>
 			
 			<?php
 				if ( 'true' == esc_attr( $_GET['updated'] ) ) echo '<div class="updated" ><p>Theme Settings updated.</p></div>';
@@ -105,21 +105,21 @@ class vhmThemeSettings
 					if ( $this->current_tab == 'general')
 					{
 						?>
-						<h3 class="title"><?php _e('Background color and image', TEXTDOMAIN); ?></h3>
+						<h3 class="title"><?php _e('Background color and image', basename(__DIR__)); ?></h3>
 						<p><?php 
 							printf(
-								__('To change the background color and/or image go to %s or click the button below', TEXTDOMAIN), 
+								__('To change the background color and/or image go to %s or click the button below', basename(__DIR__)), 
 								'<code>"Appearance > Background"</code>'
 							); 
 						?></p>
 						<p><a href="<?php echo sprintf(admin_url('customize.php?return=%s&autofocus[control]=background_image'), admin_url('themes.php?page=theme-settings&tab='.$_GET['tab']) );  ?>" class="button"><?php _e('Change background')?></a></p>
 						
-						<h3 class="title"><?php _e('Fonts', TEXTDOMAIN); ?></h3>
+						<h3 class="title"><?php _e('Fonts', basename(__DIR__)); ?></h3>
 						<table class="form-table">
 							<tr>
 								<th><label for="fonts">Google Fonts</label></th>
 								<td>
-									<p><label for="fonts"><?php _e('Paste here the codes name from Google Fonts', TEXTDOMAIN)?></label></p>
+									<p><label for="fonts"><?php _e('Paste here the codes name from Google Fonts', basename(__DIR__))?></label></p>
 									<p><textarea id="fonts" class="large-text code" name="fonts" cols="50" rows="10"><?php echo esc_html( stripslashes( $this->settings["fonts"] ) ); ?></textarea></p>
 								</td>
 							</tr>
@@ -165,12 +165,12 @@ class vhmThemeSettings
 			<?php } ?>
 					
 				<p class="submit" style="clear: both;">
-					<input type="submit" name="Submit" class="button-primary" value="<?php _e('Update Settings', TEXTDOMAIN)?>" />
+					<input type="submit" name="Submit" class="button-primary" value="<?php _e('Update Settings', basename(__DIR__))?>" />
 					<input type="hidden" name="settings-submit" value="Y" />
 				</p>
 			</form>
 				
-			<p class="description"><?php _e('Theme by', TEXTDOMAIN); ?> <a href="http://viktormorales.com/">viktormorales.com</a> | <?php _e('Need support? Don\'t waste your precious time, HIRE ME!', TEXTDOMAIN); ?> | <?php _e('Feeling generous? Buy me a beer, beer is good for motivation.', TEXTDOMAIN)?></p>
+			<p class="description"><?php _e('Theme by', basename(__DIR__)); ?> <a href="http://viktormorales.com/">viktormorales.com</a> | <?php _e('Need support? Don\'t waste your precious time, HIRE ME!', basename(__DIR__)); ?> | <?php _e('Feeling generous? Buy me a beer, beer is good for motivation.', basename(__DIR__))?></p>
 
 		</div>
 	<?php

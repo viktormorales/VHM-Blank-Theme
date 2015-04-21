@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HTML5 Blank WordPress Theme\n"
-"POT-Creation-Date: 2015-04-13 23:21+0200\n"
+"POT-Creation-Date: 2015-04-21 20:37+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
 "Language-Team: Ioan Virag | www.ioanvirag.com <ioan@ioanvirag.com>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
@@ -24,46 +24,17 @@ msgstr "Página no encontrada"
 msgid "Return home?"
 msgstr "¿Regresar al Inicio?"
 
-#: ../archive.php:34 ../index.php:28
+#: ../archive.php:31
 msgid "Previous page"
-msgstr ""
+msgstr "Página anterior"
 
-#: ../archive.php:35 ../index.php:29
+#: ../archive.php:32
 msgid "Next page"
-msgstr ""
+msgstr "Página siguiente"
 
-#: ../archive.php:36 ../content.php:26 ../index.php:30
-#: ../loop-photography.php:32
+#: ../archive.php:33 ../content.php:22
 msgid "Page"
-msgstr ""
-
-#: ../author.php:9
-msgid "Author Archives for "
-msgstr "Archivos de autor de"
-
-#: ../author.php:15
-msgid "About "
-msgstr ""
-
-#: ../author.php:42 ../loop.php:22
-msgid "Published by"
-msgstr "Publicado por"
-
-#: ../author.php:43 ../loop.php:23
-msgid "Leave your thoughts"
-msgstr "Deja tus comentarios"
-
-#: ../author.php:43 ../loop.php:23
-msgid "1 Comment"
-msgstr "1 Comentario"
-
-#: ../author.php:43 ../loop.php:23
-msgid "% Comments"
-msgstr "% Comentarios"
-
-#: ../author.php:62 ../loop.php:39
-msgid "Sorry, nothing to display."
-msgstr "Disculpa, nada para mostrar."
+msgstr "Página"
 
 #: ../comments.php:3
 msgid "Post is password protected. Enter the password to view any comments."
@@ -73,139 +44,143 @@ msgstr "Entrada protegida. Introduzca la contraseña para ver los comentarios."
 msgid "Comments are closed here."
 msgstr "Los comentarios están cerrados."
 
-#: ../content.php:17 ../loop-photography.php:23
+#: ../content-none.php:9
+msgid "Nothing Found"
+msgstr "No se ha encontrado nada."
+
+#: ../content-none.php:16
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo sentimos, pero no hay nada que corresponda con tus criterios de búsqueda. "
+"Inténtalo de nuevo con algunas palabras diferentes."
+
+#: ../content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que no pudimos encontrar lo que estas buscando. Quizás ayude realizar "
+"una búsqueda."
+
+#: ../content.php:8 ../loop.php:19
+msgid "Comment"
+msgstr "Comentar"
+
+#: ../content.php:8 ../loop.php:19
+msgid "1 comment"
+msgstr "1 comentario"
+
+#: ../content.php:8 ../loop.php:19
 #, php-format
-msgid "Continue reading %s"
-msgstr ""
+msgid "% comments"
+msgstr "% comentarios"
 
-#: ../content.php:22 ../loop-photography.php:28
+#: ../content.php:18
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
-#: ../functions.php:63
+#: ../functions.php:50
 msgid "Header Menu"
 msgstr "Menú de la cabecera"
 
-#: ../functions.php:72
+#: ../functions.php:59
 msgid "Right sidebar"
+msgstr "Barra izquierda"
+
+#: ../functions.php:86
+msgid "Pingback:"
+msgstr "Notificación:"
+
+#: ../functions.php:86
+msgid "Edit"
+msgstr "Editar"
+
+#. translators: 1: comment author, 2: date and time
+#: ../functions.php:104
+#, php-format
+msgid "%1$s <br /> %2$s"
 msgstr ""
 
-#: ../functions.php:128
+#. translators: 1: date, 2: time
+#: ../functions.php:110
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s en %2$s"
+
+#: ../functions.php:115
+msgid "Your comment is awaiting moderation."
+msgstr "Su comentario espera moderación."
+
+#: ../functions.php:122
+msgid "Reply <span>&darr;</span>"
+msgstr "Responder <span>&darr;</span>"
+
+#: ../functions.php:179
 msgid "Clear"
 msgstr ""
 
-#: ../functions.php:129
+#: ../functions.php:180
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
-#: ../functions.php:130
+#: ../functions.php:181
 msgid "Select Color"
+msgstr "Elija color"
+
+#: ../libs/theme.settings.php:31 ../libs/theme.settings.php:91
+msgid "Theme settings"
+msgstr "Opciones de plantilla"
+
+#: ../libs/theme.settings.php:76
+msgid "General"
+msgstr "General"
+
+#: ../libs/theme.settings.php:108
+msgid "Background color and image"
+msgstr "Color e imagen de fondo"
+
+#: ../libs/theme.settings.php:111
+#, php-format
+msgid ""
+"To change the background color and/or image go to %s or click the button "
+"below"
+msgstr ""
+"Para cambiar el color y/o imagen de fondo vaya a %s o haga click en el "
+"siguiente botón"
+
+#: ../libs/theme.settings.php:115
+msgid "Change background"
+msgstr "Cambiar fondo"
+
+#: ../libs/theme.settings.php:117
+msgid "Fonts"
+msgstr "Fuentes"
+
+#: ../libs/theme.settings.php:122
+msgid "Paste here the codes name from Google Fonts"
 msgstr ""
 
-#: ../libs/vhmThemeSettings.php:37
-msgid "Theme Settings"
-msgstr ""
-
-#: ../libs/vhmThemeSettings.php:164
+#: ../libs/theme.settings.php:168
 msgid "Update Settings"
-msgstr ""
+msgstr "Actualizar"
 
-#: ../libs/vhmThemeSettings.php:169
+#: ../libs/theme.settings.php:173
 msgid "Theme by"
-msgstr ""
+msgstr "Tema por"
 
-#: ../libs/vhmThemeSettings.php:169
+#: ../libs/theme.settings.php:173
 msgid "Need support? Don't waste your precious time, HIRE ME!"
 msgstr ""
 
-#: ../libs/vhmThemeSettings.php:169
+#: ../libs/theme.settings.php:173
 msgid "Feeling generous? Buy me a beer, beer is good for motivation."
 msgstr ""
 
-#: ../libs/vhmThemeSettings/backend.form.php:11
-msgid "Home"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:12
-msgid "The loop"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:13
-msgid "Posts"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:14
-msgid "Pages"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:27
-#: ../libs/vhmThemeSettings/backend.form.php:46
-#: ../libs/vhmThemeSettings/backend.form.php:63
-msgid "Post meta data"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:30
-#: ../libs/vhmThemeSettings/backend.form.php:49
-#: ../libs/vhmThemeSettings/backend.form.php:66
-msgid "Show author"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:31
-#: ../libs/vhmThemeSettings/backend.form.php:50
-#: ../libs/vhmThemeSettings/backend.form.php:67
-msgid "Show date"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:32
-#: ../libs/vhmThemeSettings/backend.form.php:51
-#: ../libs/vhmThemeSettings/backend.form.php:68
-msgid "Show comments"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/backend.form.php:33
-#: ../libs/vhmThemeSettings/backend.form.php:52
-msgid "Show categories"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:27
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:28
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:86
-msgid "Theme settings"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:64
-msgid "General"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:64
-msgid "Templates"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:81
-msgid "You do not have sufficient permissions to access this page."
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesBackend.php:102
-msgid "Thanks for choosing my theme."
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
-msgid "Comment"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
-msgid "1 comment"
-msgstr ""
-
-#: ../libs/vhmThemeSettings/vhmThemesFrontend.php:27
-#, php-format
-msgid "% comments"
-msgstr ""
-
-#: ../search.php:7
-#, php-format
-msgid "%s Search Results for "
-msgstr "%s resultados resultados para"
+#: ../loop.php:27
+msgid "Continue reading"
+msgstr "Continuar leyendo"
 
 #: ../searchform.php:3
 msgid "To search, type and hit enter."
@@ -215,25 +190,30 @@ msgstr "Para buscar, escribe y presiona Enter"
 msgid "Search"
 msgstr "Buscar"
 
-#: ../single.php:33
-msgid "Next"
-msgstr ""
-
-#: ../single.php:34
-msgid "Next post:"
-msgstr ""
-
-#: ../single.php:36
-msgid "Previous"
-msgstr ""
-
-#: ../single.php:37
-msgid "Previous post:"
-msgstr ""
-
 #: ../tag.php:7
 msgid "Tag Archive: "
 msgstr "Archivo de etiquetas: "
+
+#~ msgid "Author Archives for "
+#~ msgstr "Archivos de autor de"
+
+#~ msgid "Published by"
+#~ msgstr "Publicado por"
+
+#~ msgid "Leave your thoughts"
+#~ msgstr "Deja tus comentarios"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Comentario"
+
+#~ msgid "% Comments"
+#~ msgstr "% Comentarios"
+
+#~ msgid "Sorry, nothing to display."
+#~ msgstr "Disculpa, nada para mostrar."
+
+#~ msgid "%s Search Results for "
+#~ msgstr "%s resultados resultados para"
 
 #~ msgid "Archives"
 #~ msgstr "Archivos"
@@ -246,12 +226,6 @@ msgstr "Archivo de etiquetas: "
 
 #~ msgid "<span class=\"fn\">%s</span> <span class=\"says\">says:</span>"
 #~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dice:</span>"
-
-#~ msgid "Your comment is awaiting moderation."
-#~ msgstr "Su comentario espera moderación."
-
-#~ msgid "%1$s at %2$s"
-#~ msgstr "%1$s en %2$s"
 
 #~ msgid "(Edit)"
 #~ msgstr "(Editar)"
@@ -283,9 +257,6 @@ msgstr "Archivo de etiquetas: "
 #~ msgid "Add New HTML5 Blank Custom Post"
 #~ msgstr "Añadir entrada personalizada de HTML5 Blank"
 
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
 #~ msgid "Edit HTML5 Blank Custom Post"
 #~ msgstr "Editar entrada personalizada de HTML5 Blank"
 
@@ -302,7 +273,8 @@ msgstr "Archivo de etiquetas: "
 #~ msgstr "No se han encontrado entradas personalizadas de HTML5 Blank"
 
 #~ msgid "No HTML5 Blank Custom Posts found in Trash"
-#~ msgstr "No se han encontrado entradas personalizadas de HTML5 Blank en la papelera"
+#~ msgstr ""
+#~ "No se han encontrado entradas personalizadas de HTML5 Blank en la papelera"
 
 #~ msgid "Latest Posts"
 #~ msgstr "Últimas entradas"

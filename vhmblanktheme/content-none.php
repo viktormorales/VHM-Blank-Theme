@@ -4,25 +4,21 @@
  */
 ?>
 
-<section class="no-results not-found">
+<section id="not-found">
 	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Nothing Found', TEXTDOMAIN ); ?></h2>
+		<h2 class="page-title"><?php _e( 'Nothing Found', basename(__DIR__) ); ?></h2>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
 
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+		<?php if ( is_search() ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', TEXTDOMAIN ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
-
-		<?php elseif ( is_search() ) : ?>
-
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', TEXTDOMAIN ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', basename(__DIR__) ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', TEXTDOMAIN ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', basename(__DIR__) ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>

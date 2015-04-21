@@ -1,6 +1,6 @@
 # VHM Blank Theme
 
-A WordPress blank/starter theme for start working on your own project. It works with jQuery, Bootstrap and Fontawesome.
+This is a personal WordPress blank/starter theme I use everytime I start a new project. 
 
 ## Download
 * [Master branch](https://github.com/viktormorales/VHM-Blank-Theme/archive/master.zip)
@@ -9,12 +9,15 @@ A WordPress blank/starter theme for start working on your own project. It works 
 * Download the Master branch.
 * Extract the files from the ZIP.
 * Copy/Upload the *vhmblanktheme* folder into your *wp-content/themes* WordPress folder
-* Activate the theme and start working with it.
+* Activate the theme and start working.
 
 ## Features
+* **Bootstrap**
+* **Fontawesome**
+* A very basic "Theme Settings" (ready to edit and start adding your oun options)
 * **WordPress background & header support:**  
   Allows to change the default background & header from the *Appearance* menu
-* **Change the fonts:**  
+* **Google fonts:**  
   Allows to add and change the basic fonts (site title, site description, paragraphs and headings) from *Appearance > Theme settings*
 
 ## Author

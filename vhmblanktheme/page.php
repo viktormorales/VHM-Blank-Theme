@@ -1,19 +1,10 @@
-<?php
-/**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<section id="page">
 
-	<div id="page" class="content-area">
 		<?php
 		// Start the loop.
 		while ( have_posts() ) { the_post();
-
 			get_template_part( 'content', get_post_format() );
 
 			// If comments are open or we have at least one comment, load up the comment template.
