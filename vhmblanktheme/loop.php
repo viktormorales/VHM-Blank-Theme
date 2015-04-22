@@ -24,7 +24,7 @@
 					<?php the_excerpt(); ?>
 					
 					<footer class="page-footer">
-						<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e('Continue reading', basename(__DIR__)); ?></a>
+						<p><a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e('Continue reading', basename(__DIR__)); ?></a></p>
 					</footer>
 				</div>
 			</div>

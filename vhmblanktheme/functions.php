@@ -52,13 +52,15 @@ if (function_exists('add_theme_support'))
 		)
 	);
  }
-
+ 
 /** Register sidebar */
-if ( function_exists('register_sidebar') )
-{
-	register_sidebar( array( 
-		'name' => __('Right sidebar', basename(__DIR__))
-	));
+add_action( 'widgets_init', 'custom_widgets_init' );
+function custom_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Righ Sidebar', basename(__DIR__) ),
+        'id' => 'main-right-sidebar',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', basename(__DIR__) ),
+    ) );
 }
 
 /** Removes the "Category:" string from the title */
@@ -81,7 +83,7 @@ function custom_comments( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:'); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit'), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', basename(__DIR__)); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', basename(__DIR__)), '<span class="edit-link">', '</span>' ); ?></p>
 	<?php
 		break;
 		default :
@@ -110,7 +112,7 @@ function custom_comments( $comment, $args, $depth ) {
 					);
 				?>
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.'); ?></em>
+					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', basename(__DIR__)); ?></em>
 					<br />
 				<?php endif; ?>
 
@@ -173,9 +175,9 @@ function custom_comments( $comment, $args, $depth ) {
         1
     );
     $colorpicker_l10n = array(
-        'clear' => __( 'Clear' ),
-        'defaultString' => __( 'Default' ),
-        'pick' => __( 'Select Color' )
+        'clear' => __( 'Clear', basename(__DIR__) ),
+        'defaultString' => __( 'Default', basename(__DIR__) ),
+        'pick' => __( 'Select Color', basename(__DIR__) )
     );
     wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n ); 
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/admin_scripts.js', array( 'wp-color-picker' ), false, true );

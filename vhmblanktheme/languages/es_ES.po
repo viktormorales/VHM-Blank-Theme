@@ -1,292 +1,268 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
-"POT-Creation-Date: 2015-04-21 20:37+0200\n"
-"PO-Revision-Date: \n"
+"Project-Id-Version: Plantilla Wordpress\n"
+"POT-Creation-Date: 2015-04-21 00:38+0200\n"
+"PO-Revision-Date: 2015-04-21 00:38+0200\n"
 "Last-Translator: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
-"Language-Team: Ioan Virag | www.ioanvirag.com <ioan@ioanvirag.com>\n"
+"Language-Team: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.6\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_nx:4c,1,2;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../js\n"
 
-#: ../404.php:10
-msgid "Page not found"
-msgstr "Página no encontrada"
-
-#: ../404.php:12
-msgid "Return home?"
-msgstr "¿Regresar al Inicio?"
-
-#: ../archive.php:31
+#: ../archive-jetpack-testimonial.php:30 ../archive.php:34 ../category.php:28
 msgid "Previous page"
-msgstr "Página anterior"
+msgstr "Anterior"
 
-#: ../archive.php:32
+#: ../archive-jetpack-testimonial.php:31 ../archive.php:35 ../category.php:29
 msgid "Next page"
-msgstr "Página siguiente"
+msgstr "Siguiente"
 
-#: ../archive.php:33 ../content.php:22
+#: ../archive-jetpack-testimonial.php:32 ../archive.php:36
 msgid "Page"
 msgstr "Página"
 
-#: ../comments.php:3
-msgid "Post is password protected. Enter the password to view any comments."
-msgstr "Entrada protegida. Introduzca la contraseña para ver los comentarios."
-
-#: ../comments.php:18
-msgid "Comments are closed here."
-msgstr "Los comentarios están cerrados."
-
-#: ../content-none.php:9
-msgid "Nothing Found"
-msgstr "No se ha encontrado nada."
-
-#: ../content-none.php:16
+#: ../comments.php:17
 msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+"This post is password protected. Enter the password to view any comments."
 msgstr ""
-"Lo sentimos, pero no hay nada que corresponda con tus criterios de búsqueda. "
-"Inténtalo de nuevo con algunas palabras diferentes."
+"Este artículo está protegido. Ingrese la contraseña para ver los comentarios."
 
-#: ../content-none.php:21
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+#: ../comments.php:34 ../comments.php:56
+msgid "Comment navigation"
 msgstr ""
-"Parece que no pudimos encontrar lo que estas buscando. Quizás ayude realizar "
-"una búsqueda."
 
-#: ../content.php:8 ../loop.php:19
-msgid "Comment"
-msgstr "Comentar"
+#: ../comments.php:35 ../comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
 
-#: ../content.php:8 ../loop.php:19
+#: ../comments.php:36 ../comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:40 ../loop.php:11 ../page.php:12 ../single.php:11
+#: ../templates/template-home.php:30 ../templates/template-home.php:58
+#: ../templates/template-home.php:121 ../templates/template-home.php:154
+#: ../templates/template-home.php:191 ../templates/template-home.php:214
 msgid "1 comment"
 msgstr "1 comentario"
 
-#: ../content.php:8 ../loop.php:19
+#: ../comments.php:40 ../loop.php:11 ../page.php:12 ../single.php:11
+#: ../templates/template-home.php:30 ../templates/template-home.php:58
+#: ../templates/template-home.php:121 ../templates/template-home.php:154
+#: ../templates/template-home.php:191 ../templates/template-home.php:214
 #, php-format
 msgid "% comments"
 msgstr "% comentarios"
 
-#: ../content.php:18
-msgid "Pages:"
-msgstr "Páginas:"
+#: ../comments.php:40
+msgid "Help me by leaving a reply! :)"
+msgstr "¡Ayudame dejando tu comentario! :)"
 
-#: ../functions.php:50
-msgid "Header Menu"
-msgstr "Menú de la cabecera"
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr ""
 
-#: ../functions.php:59
-msgid "Right sidebar"
-msgstr "Barra izquierda"
+#: ../functions.php:48
+msgid "Primary Menu"
+msgstr ""
 
-#: ../functions.php:86
+#: ../functions.php:49
+msgid "Secondary Menu"
+msgstr ""
+
+#: ../functions.php:106
 msgid "Pingback:"
-msgstr "Notificación:"
+msgstr ""
 
-#: ../functions.php:86
+#: ../functions.php:106
 msgid "Edit"
 msgstr "Editar"
 
 #. translators: 1: comment author, 2: date and time
-#: ../functions.php:104
+#: ../functions.php:120
 #, php-format
-msgid "%1$s <br /> %2$s"
-msgstr ""
+msgid "%1$s on %2$s"
+msgstr "%1$s el %2$s"
 
 #. translators: 1: date, 2: time
-#: ../functions.php:110
+#: ../functions.php:126
 #, php-format
 msgid "%1$s at %2$s"
-msgstr "%1$s en %2$s"
+msgstr "%1$s a las %2$s"
 
-#: ../functions.php:115
-msgid "Your comment is awaiting moderation."
-msgstr "Su comentario espera moderación."
-
-#: ../functions.php:122
+#: ../functions.php:127
 msgid "Reply <span>&darr;</span>"
 msgstr "Responder <span>&darr;</span>"
 
-#: ../functions.php:179
-msgid "Clear"
-msgstr ""
+#: ../functions.php:132
+msgid "Your comment is awaiting moderation."
+msgstr "Su comentario aguarda moderación"
 
-#: ../functions.php:180
-msgid "Default"
-msgstr "Por defecto"
+#: ../functions.php:149 ../lib/theme.settings.php:87
+msgid "Home"
+msgstr "Inicio"
 
-#: ../functions.php:181
-msgid "Select Color"
-msgstr "Elija color"
+#: ../functions.php:188 ../templates/template-home.php:34
+#: ../templates/template-home.php:125
+msgid "read more &raquo;"
+msgstr "leer más &raquo;"
 
-#: ../libs/theme.settings.php:31 ../libs/theme.settings.php:91
+#: ../lib/theme.settings.php:27
 msgid "Theme settings"
 msgstr "Opciones de plantilla"
 
-#: ../libs/theme.settings.php:76
+#: ../lib/theme.settings.php:87
 msgid "General"
 msgstr "General"
 
-#: ../libs/theme.settings.php:108
+#: ../lib/theme.settings.php:124
 msgid "Background color and image"
-msgstr "Color e imagen de fondo"
+msgstr ""
 
-#: ../libs/theme.settings.php:111
+#: ../lib/theme.settings.php:127
 #, php-format
 msgid ""
 "To change the background color and/or image go to %s or click the button "
 "below"
 msgstr ""
-"Para cambiar el color y/o imagen de fondo vaya a %s o haga click en el "
-"siguiente botón"
 
-#: ../libs/theme.settings.php:115
+#: ../lib/theme.settings.php:131
 msgid "Change background"
-msgstr "Cambiar fondo"
+msgstr ""
 
-#: ../libs/theme.settings.php:117
+#: ../lib/theme.settings.php:133
 msgid "Fonts"
-msgstr "Fuentes"
+msgstr ""
 
-#: ../libs/theme.settings.php:122
+#: ../lib/theme.settings.php:138
 msgid "Paste here the codes name from Google Fonts"
 msgstr ""
 
-#: ../libs/theme.settings.php:168
+#: ../lib/theme.settings.php:181
+msgid "First block"
+msgstr ""
+
+#: ../lib/theme.settings.php:185 ../lib/theme.settings.php:234
+#: ../lib/theme.settings.php:281 ../lib/theme.settings.php:330
+msgid "Icon"
+msgstr ""
+
+#: ../lib/theme.settings.php:195 ../lib/theme.settings.php:242
+#: ../lib/theme.settings.php:291 ../lib/theme.settings.php:340
+#, php-format
+msgid "Use code names from %1$s or %2$s"
+msgstr ""
+
+#: ../lib/theme.settings.php:203 ../lib/theme.settings.php:250
+#: ../lib/theme.settings.php:299 ../lib/theme.settings.php:348
+msgid "Title"
+msgstr ""
+
+#: ../lib/theme.settings.php:214 ../lib/theme.settings.php:261
+#: ../lib/theme.settings.php:310 ../lib/theme.settings.php:359
+msgid "Category"
+msgstr ""
+
+#: ../lib/theme.settings.php:218 ../lib/theme.settings.php:265
+#: ../lib/theme.settings.php:314 ../lib/theme.settings.php:363
+msgid "All"
+msgstr ""
+
+#: ../lib/theme.settings.php:230
+msgid "Second block"
+msgstr ""
+
+#: ../lib/theme.settings.php:277
+msgid "Third block"
+msgstr ""
+
+#: ../lib/theme.settings.php:326
+msgid "Four block"
+msgstr ""
+
+#: ../lib/theme.settings.php:378
 msgid "Update Settings"
-msgstr "Actualizar"
+msgstr ""
 
-#: ../libs/theme.settings.php:173
+#: ../lib/theme.settings.php:383
 msgid "Theme by"
-msgstr "Tema por"
+msgstr ""
 
-#: ../libs/theme.settings.php:173
+#: ../lib/theme.settings.php:383
 msgid "Need support? Don't waste your precious time, HIRE ME!"
 msgstr ""
 
-#: ../libs/theme.settings.php:173
+#: ../lib/theme.settings.php:383
 msgid "Feeling generous? Buy me a beer, beer is good for motivation."
 msgstr ""
 
-#: ../loop.php:27
-msgid "Continue reading"
-msgstr "Continuar leyendo"
+#: ../loop.php:11 ../page.php:12 ../single.php:11
+#: ../templates/template-home.php:30 ../templates/template-home.php:58
+#: ../templates/template-home.php:121 ../templates/template-home.php:154
+#: ../templates/template-home.php:191 ../templates/template-home.php:214
+msgid "Comment"
+msgstr "Comentar"
 
-#: ../searchform.php:3
-msgid "To search, type and hit enter."
-msgstr "Para buscar, escribe y presiona Enter"
+#: ../single.php:42
+msgid "Table of contents"
+msgstr "Tabla de contenidos"
 
-#: ../searchform.php:4
-msgid "Search"
-msgstr "Buscar"
+#: ../templates/template-home.php:70 ../templates/template-home.php:166
+#: ../templates/template-home.php:223
+#, php-format
+msgid "More in %s &raquo;"
+msgstr "Más en %s &raquo;"
 
-#: ../tag.php:7
-msgid "Tag Archive: "
-msgstr "Archivo de etiquetas: "
+#: ../templates/template-home.php:92
+msgid "Testimonials"
+msgstr "Testimoniales"
 
-#~ msgid "Author Archives for "
-#~ msgstr "Archivos de autor de"
+#: ../templates/template-home.php:252
+msgid "More articles &raquo;"
+msgstr "Más artículos &raquo;"
 
-#~ msgid "Published by"
-#~ msgstr "Publicado por"
+#~ msgid "In the blog!"
+#~ msgstr "¡En el blog!"
 
-#~ msgid "Leave your thoughts"
-#~ msgstr "Deja tus comentarios"
+#~ msgid "Home Settings"
+#~ msgstr "Opciones de la página de incio"
 
-#~ msgid "1 Comment"
-#~ msgstr "1 Comentario"
+#~ msgid "First Block title"
+#~ msgstr "Título del primer bloque"
 
-#~ msgid "% Comments"
-#~ msgstr "% Comentarios"
+#~ msgid "First block category"
+#~ msgstr "Categoría del primer bloque"
 
-#~ msgid "Sorry, nothing to display."
-#~ msgstr "Disculpa, nada para mostrar."
+#~ msgid "Second Block title"
+#~ msgstr "Título del segundo bloque"
 
-#~ msgid "%s Search Results for "
-#~ msgstr "%s resultados resultados para"
+#~ msgid "Second block category"
+#~ msgstr "Categoría del segundo bloque"
 
-#~ msgid "Archives"
-#~ msgstr "Archivos"
+#~ msgid "Configure your home page:"
+#~ msgstr "Configurá tu página inicial"
 
-#~ msgid "Categories for"
-#~ msgstr "Categorías para"
+#~ msgid "&mdash; Select &mdash;"
+#~ msgstr "&mdash; Elegir &mdash;"
 
-#~ msgid "Powered by"
-#~ msgstr "Desarrollado con"
+#~ msgid "More interesting articles!"
+#~ msgstr "Más artículos interesantes!"
 
-#~ msgid "<span class=\"fn\">%s</span> <span class=\"says\">says:</span>"
-#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dice:</span>"
+#~ msgctxt "comments title"
+#~ msgid "1 comment"
+#~ msgid_plural "%1$s comments"
+#~ msgstr[0] "1 comentario"
+#~ msgstr[1] "%1$s comentarios"
 
-#~ msgid "(Edit)"
-#~ msgstr "(Editar)"
+#~ msgid "read more"
+#~ msgstr "continuar leyendo"
 
-#~ msgid "Sidebar Menu"
-#~ msgstr "Menú de la barra lateral"
-
-#~ msgid "Extra Menu"
-#~ msgstr "Menú extra"
-
-#~ msgid "Widget Area 1"
-#~ msgstr "Zona 1 de widgets"
-
-#~ msgid "Description for this widget-area..."
-#~ msgstr "Descripción para esta zona..."
-
-#~ msgid "Widget Area 2"
-#~ msgstr "Zona 2 de widgets"
-
-#~ msgid "View Article"
-#~ msgstr "Ver artículo"
-
-#~ msgid "HTML5 Blank Custom Post"
-#~ msgstr "Entradas personalizadas de HTML5 Blank"
-
-#~ msgid "Add New"
-#~ msgstr "Añadir nuevo"
-
-#~ msgid "Add New HTML5 Blank Custom Post"
-#~ msgstr "Añadir entrada personalizada de HTML5 Blank"
-
-#~ msgid "Edit HTML5 Blank Custom Post"
-#~ msgstr "Editar entrada personalizada de HTML5 Blank"
-
-#~ msgid "New HTML5 Blank Custom Post"
-#~ msgstr "Nueva entrada personalizada de HTML5 Blank"
-
-#~ msgid "View HTML5 Blank Custom Post"
-#~ msgstr "Ver entrada personalizada de HTML5 Blank"
-
-#~ msgid "Search HTML5 Blank Custom Post"
-#~ msgstr "Buscar entrada personalizada de HTML5 Blank"
-
-#~ msgid "No HTML5 Blank Custom Posts found"
-#~ msgstr "No se han encontrado entradas personalizadas de HTML5 Blank"
-
-#~ msgid "No HTML5 Blank Custom Posts found in Trash"
-#~ msgstr ""
-#~ "No se han encontrado entradas personalizadas de HTML5 Blank en la papelera"
-
-#~ msgid "Latest Posts"
-#~ msgstr "Últimas entradas"
-
-#~ msgid "Tags: "
-#~ msgstr "Etiquetas: "
-
-#~ msgid "Categorised in: "
-#~ msgstr "Categorizado en: "
-
-#~ msgid "This post was written by "
-#~ msgstr "Esta entrada fue escrita por"
-
-#~ msgid "%s results for "
-#~ msgstr "%s Ergebnisse für "
+#~ msgid "More in &raquo;"
+#~ msgstr " Más en &raquo;"

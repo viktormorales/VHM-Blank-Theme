@@ -14,6 +14,8 @@
 		<?php 		
 			the_content(); 
 			
+			the_tags( '<p class="text-muted"><i class="fa fa-tags"></i> ', ', ', '</p>' );
+			
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', basename(__DIR__) ) . '</span>',
 				'after'       => '</div>',

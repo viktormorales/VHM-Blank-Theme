@@ -1,11 +1,10 @@
 		</div>
 		<div class="col-md-4">
+			<?php if ( is_active_sidebar( 'main-right-sidebar' ) ) { ?>
 			<ul id="sidebar" class="list-unstyled">
-				<?php if ( ! dynamic_sidebar() ) : ?>
-					<li>{static sidebar item 1}</li>
-					<li>{static sidebar item 2}</li>
-				<?php endif; ?>
+				 <?php dynamic_sidebar( 'main-right-sidebar' ); ?>
 			</ul>
+			<?php } ?>
 		</div>
 	</div>
 	<!-- footer -->
