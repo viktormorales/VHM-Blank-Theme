@@ -1,4 +1,6 @@
 <?php
+if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+    die(__('Do not load this page directly. Thanks!', basename(__DIR__)));
 if ( post_password_required() ) {
 	return;
 }
@@ -7,38 +9,25 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', basename(__DIR__) ),
-					number_format_i18n( get_comments_number() ), get_the_title() );
-			?>
+		<h2 id="comments">
+			<i class="icon-comments-alt icon-large"></i>&nbsp; 
+			<?php comments_number(__('No Comments', basename(__DIR__)), __('1 Comment', basenamme__DIR__), __('% Comments', basename(__DIR__)) ); ?> <a class="btn btn-success pull-right" href="#respond"><?php _e('Comment', basename(__DIR__)); ?></a>
 		</h2>
 		
-		<ul class="list-unstyled">
-			<?php
-				wp_list_comments( array( 'callback' => 'custom_comments' ) );
-			?>
-		</ul><!-- .comment-list -->
-
+		<ul class="media-list">
+		<?php
+			wp_list_comments( array('callback' => 'custom_comments' ) );
+		?>
+		</ul>
 		
 		<?php
 		// Are there comments to navigate through?
 		if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
-		<nav class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php _e( 'Comment navigation', basename(__DIR__) ); ?></h2>
-			<div class="nav-links">
-				<?php
-					if ( $prev_link = get_previous_comments_link( __( 'Older Comments', basename(__DIR__) ) ) ) :
-						printf( '<div class="nav-previous">%s</div>', $prev_link );
-					endif;
-
-					if ( $next_link = get_next_comments_link( __( 'Newer Comments', basename(__DIR__) ) ) ) :
-						printf( '<div class="nav-next">%s</div>', $next_link );
-					endif;
-				?>
-			</div><!-- .nav-links -->
-		</nav><!-- .comment-navigation -->
+			<div class="navigation">
+				<div class="alignleft"><?php previous_comments_link() ?></div>
+				<div class="alignright"><?php next_comments_link() ?></div>
+			</div>
 		<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
@@ -77,7 +66,7 @@ if ( post_password_required() ) {
 		// redefine your own textarea (the comment body)
 		'comment_field' => '<div class="form-group"><label for="comment">' . __( 'Comment', basename(__DIR__) ) . '</label><textarea id="comment" class="form-control" name="comment" aria-required="true"></textarea></div>',
 		'fields' => $fields,
-		'class_submit' => 'btn btn-default'
+		'class_submit' => 'btn btn-info'
 	);
 	comment_form($comments_args);
 	?>

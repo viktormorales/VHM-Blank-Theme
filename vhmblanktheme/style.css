@@ -94,13 +94,8 @@ a img.aligncenter {
 	margin:0;
 	padding:0 4px 5px;
 }
-.sticky {
-
-}
-.bypostauthor {
-
-}
-
+.comment.bypostauthor { background: #eee; padding: 5px; }
+.comment .children { list-style: none; }
 /** PRINT */
 @media print {
 	* {

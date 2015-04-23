@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
-	<?php wp_head(); ?>
+	<?php 
+		wp_head(); 
+		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+	?>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 </head>
 <body <?php body_class(); ?>>
