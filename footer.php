@@ -11,13 +11,13 @@
 	<footer class="footer" role="contentinfo">
 
 		<div class="row">
-			<div class="col-md-6">
-			<p class="text-left text-mute">
+			<div class="col-12 col-md-6">
+			<p class="text-center text-md-left text-mute">
 			&copy; <?php echo date('Y'); ?> Copyright <a href="<?php site_url(); ?>"><?php bloginfo('name'); ?></a>.
 			</p>
 			</div>
-			<div class="col-md-6">
-				<p class="text-right text-mute">
+			<div class="col-12 col-md-6">
+				<p class="text-center text-md-right text-mute">
 					Graphic &amp; Web Designer // <a href="//viktormorales.com" title="WordPress">viktormorales.com</a>
 				</p>
 			</div>

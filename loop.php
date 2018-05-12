@@ -16,7 +16,7 @@
 						<ul class="post-meta-data text-muted list-unstyled">
 							<li><i class="fa fa-user"></i> <?php the_author(); ?></li>
 							<li><i class="fa fa-clock-o"></i> <?php the_time('j.M.Y'); ?></li>
-							<li><i class="fa fa-comment"></i> <a href="<?php the_permalink(); ?>#comments"><?php comments_number( __('Comment', basename(__DIR__)), __('1 comment', basename(__DIR__)), __('% comments', basename(__DIR__)) ); ?></a></li>
+							<li><i class="fa fa-comment"></i> <a href="<?php the_permalink(); ?>#comments"><?php comments_number( __('Comment', VHMTHEME_TEXTDOMAIN), __('1 comment', VHMTHEME_TEXTDOMAIN), __('% comments', VHMTHEME_TEXTDOMAIN) ); ?></a></li>
 							<li><i class="fa fa-folder"></i> <?php the_category(', '); ?></li>
 						</ul>
 					</header>
@@ -24,7 +24,7 @@
 					<?php the_excerpt(); ?>
 					
 					<footer class="page-footer">
-						<p><a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e('Continue reading', basename(__DIR__)); ?></a></p>
+						<p><a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e('Continue reading', VHMTHEME_TEXTDOMAIN); ?></a></p>
 					</footer>
 				</div>
 			</div>
