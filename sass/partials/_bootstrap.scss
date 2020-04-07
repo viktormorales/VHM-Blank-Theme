@@ -1,0 +1,17 @@
+.row+.row {
+    margin-top: 1rem;
+}
+.lead {
+    font-size: inherit;
+    @media screen and (max-width: 768px)
+    {
+        font-size: 1.1rem;
+    }
+}
+.sticky-top {
+    @media screen and (max-width: 768px)
+    {
+        position: initial;
+        top: 0px;
+    }
+}

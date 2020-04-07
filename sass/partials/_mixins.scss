@@ -1,0 +1,16 @@
+/* EFFECTS */
+@mixin grow($scale: 1.1) {
+	transition: all .2s ease-in-out; 
+	
+	&:hover { 
+		transform: scale(#{$scale}); 
+	}
+}
+
+@function set-text-color($color){
+	@if (lightness($color) > 50){
+		@return #333;
+	} @else {
+		@return #fff;
+	}
+}

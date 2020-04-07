@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "watch": "sass --no-source-map --watch sass/style.scss:style.css --style compressed"
+  },
+  "dependencies": {
+    "npm": "^6.3.0"
+  }
+}

@@ -12,35 +12,19 @@
 	?>
 </head>
 <body <?php body_class(); ?>>
+	<!-- header -->
+	<header class="header" role="banner">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand text-light" href="<?php echo site_url('/'); ?>"><?php bloginfo('name'); ?></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-	<!-- wrapper -->
-	<div class="container">
-		
-		<img class="img-responsive" src="<?php header_image(); ?>">
-		
-		<!-- header -->
-		<header class="header" role="banner">
-			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				  <a class="navbar-brand" href="<?php echo site_url('/'); ?>"><?php bloginfo('name'); ?></a>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<?php wp_nav_menu( array('theme_location' => 'header-menu', 'depth' => 3, 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>', 'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback', 'walker' => new WP_Bootstrap_Navwalker()) ); ?>
+					</div>
 				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="header-menu">
-					
-					<?php wp_nav_menu( array('theme_location' => 'header-menu', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>', 'fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker()) ); ?>		  
-					
-				</div><!-- /.navbar-collapse -->
 			</nav>
-		</header>
-		<!-- /header -->
-		
-		<div class="row">
-			<div class="col-md-8">
+	</header>
+	<!-- /header -->

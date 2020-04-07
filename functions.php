@@ -1,12 +1,4 @@
 <?php
-
-/** Bootstrap 4 navigation style */
-require(dirname(__FILE__) . '/wp-bootstrap-navwalker.php');
-/** Bootstrap 4 comment style */
-require(dirname(__FILE__) . '/wp-bootstrap-comment-walker.php');
-/** Load the class for the theme customizer */
- require(dirname(__FILE__) . '/theme-customizer.php');
-
 /** Theme Support */
 if (!isset($content_width))
 {
@@ -30,6 +22,9 @@ if (function_exists('add_theme_support'))
     // Add HTML5
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
+    // Responsive embeds
+    add_theme_support( 'responsive-embeds' );
+
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
     add_image_size('large', 800, '', true); // Large Thumbnail
@@ -45,6 +40,12 @@ if (function_exists('add_theme_support'))
     // Localization Support
 	define('VHMTHEME_TEXTDOMAIN', 'vhmtheme');
     load_theme_textdomain(VHMTHEME_TEXTDOMAIN, get_template_directory() . '/languages');
+}
+
+/** Register Nav Walker */
+add_action( 'after_setup_theme', 'register_navwalker' );
+function register_navwalker(){
+	require_once get_template_directory() . '/incs/class-wp-bootstrap-navwalker.php';
 }
 
 /** Register menus */
@@ -71,14 +72,14 @@ function custom_widgets_init() {
  add_action( 'wp_enqueue_scripts', 'frontend_scripts' );
  function frontend_scripts() 
  {
+    wp_enqueue_script('jquery');
 	/* Popper & Bootstrap */
 	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', false, false, true);
-	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', false, false, true);
-	wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', false, false);
+	wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', false, false, true);
 
 	/* Font Awesome */
-	wp_enqueue_script('fontawesome', 'https://use.fontawesome.com/releases/v5.0.8/js/all.js');
-	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+	wp_enqueue_script('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js');
+	wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 	/* on single blog post pages with comments open and threaded comments */
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
