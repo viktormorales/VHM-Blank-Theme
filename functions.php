@@ -38,13 +38,12 @@ if (function_exists('add_theme_support'))
 	add_theme_support( 'title-tag' );
 
     // Localization Support
-	define('VHMTHEME_TEXTDOMAIN', 'vhmtheme');
-    load_theme_textdomain(VHMTHEME_TEXTDOMAIN, get_template_directory() . '/languages');
+    load_theme_textdomain( basename(__DIR__), get_template_directory() . '/languages');
 }
 
 /** Register Nav Walker */
-add_action( 'after_setup_theme', 'register_navwalker' );
-function register_navwalker(){
+add_action( 'after_setup_theme', 'register_walkers' );
+function register_walkers(){
 	require_once get_template_directory() . '/incs/class-wp-bootstrap-navwalker.php';
 }
 

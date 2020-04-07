@@ -11,12 +11,13 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 id="comments">
 			<i class="icon-comments-alt icon-large"></i>&nbsp; 
-			<?php comments_number(__('No Comments', basename(__DIR__)), __('1 Comment', basenamme__DIR__), __('% Comments', basename(__DIR__)) ); ?> <a class="btn btn-success pull-right" href="#respond"><?php _e('Comment', basename(__DIR__)); ?></a>
+			<?php comments_number(__('No Comments', basename(__DIR__)), __('1 Comment',  basename(__DIR__)), __('% Comments', basename(__DIR__)) ); ?> <a class="btn btn-success pull-right" href="#respond"><?php _e('Comment', basename(__DIR__)); ?></a>
 		</h2>
 		
 		<ul class="media-list">
 		<?php
-			wp_list_comments( array('callback' => 'custom_comments' ) );
+			require_once get_template_directory() . '/incs/class-wp-bootstrap-comment-walker.php';
+			wp_list_comments( array('style' => 'ul', 'short_ping' => true, 'avatar_size' => '64', 'walker' => new Bootstrap_Comment_Walker() ) );
 		?>
 		</ul>
 		

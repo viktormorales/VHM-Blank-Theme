@@ -11,7 +11,7 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<p class="text-center text-md-right text-mute">
-						<?php _e('WordPress Theme By %s'); ?> <a href="//viktormorales.com" title="WordPress">viktormorales.com</a>
+						<?php _e('WordPress Theme By %s',  basename(__DIR__)); ?> <a href="//viktormorales.com" title="WordPress">viktormorales.com</a>
 					</p>
 				</div>
 			</div>
