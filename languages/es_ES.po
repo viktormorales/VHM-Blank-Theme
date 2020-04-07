@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plantilla Wordpress\n"
-"POT-Creation-Date: 2020-04-07 00:53-0300\n"
-"PO-Revision-Date: 2020-04-07 00:57-0300\n"
+"POT-Creation-Date: 2020-04-07 01:01-0300\n"
+"PO-Revision-Date: 2020-04-07 01:01-0300\n"
 "Last-Translator: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
 "Language-Team: Viktor H. Morales <viktorhugomorales@gmail.com>\n"
 "Language: es_ES\n"
@@ -45,16 +45,12 @@ msgid "No Comments"
 msgstr "Sin comentarios"
 
 #: ../comments.php:14
-#, fuzzy
-#| msgid "1 comment"
 msgid "1 Comment"
-msgstr "1 comentario"
+msgstr "1 Comentario"
 
 #: ../comments.php:14
-#, fuzzy
-#| msgid "% comments"
 msgid "% Comments"
-msgstr "% comentarios"
+msgstr "% Comentarios"
 
 #: ../comments.php:14 ../comments.php:68 ../loop.php:19 ../single.php:14
 msgid "Comment"
@@ -81,9 +77,8 @@ msgid "Write a reply or comment"
 msgstr "Escriba un comentario o respuesta"
 
 #: ../footer.php:14
-#, php-format
-msgid "WordPress Theme By %s"
-msgstr "Tema WordPress por %s"
+msgid "WordPress Theme By"
+msgstr "Tema WordPress por"
 
 #: ../functions.php:55
 msgid "Header Menu"
